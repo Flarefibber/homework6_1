@@ -33,7 +33,7 @@
   
   private class ObjectBox - вспомогательный объект класса ObjectQueue. 
 
-#### [MainAppTest.java](https://github.com/Flarefibber/Bitbucket2/blob/master/HW_02_2/MainAppTest.java)
+#### [ObjectQueueTest3.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/srs/HW_02_2/ObjectQueueTest3.java)
 
   Реализует тест для методов класса ObjectQueue.
 
