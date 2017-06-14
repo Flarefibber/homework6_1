@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class ObjectQueueTest3 {
     @Test
-    public void pullback() throws Exception {
+    public void testPullback() throws Exception {
         ObjectQueue queue = new ObjectQueue(3);
         String p1 = "String 1";
         String p2 = "String 2";
