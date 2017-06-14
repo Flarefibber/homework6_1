@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ObjectQueueTest3 {
+public class ObjectQueueTest {
     @Test
     public void testPullback() throws Exception {
         ObjectQueue queue = new ObjectQueue(3);
