@@ -8,11 +8,11 @@
 ## В программе реализованы классы: 
 
 
-#### [MainApp.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_02_2/MainApp.java)
+#### [MainApp.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_03_1/MainApp.java)
 
   Запускает программу.
 
-#### [ObjectQueue.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/srs/HW_02_2/ObjectQueueTest3.java)
+#### [ObjectQueue.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_03_1/ObjectQueue.java)
 
   Реализует коллекцию.
   
@@ -30,18 +30,18 @@
   
   private class ObjectBox - вспомогательный объект класса ObjectQueue. 
 
-#### [ObjectQueueTest.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/srs/HW_02_2/ObjectQueueTest3.java)
+#### [ObjectQueueTest.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/srs/HW_03_1/ObjectQueueTest.java)
 
   Реализует тест для методов класса ObjectQueue.
 
-#### [Menu.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_02_2/Menu.java)
+#### [Menu.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_03_1/Menu.java)
 
   Реализует меню.
   
-#### [MenuUtils.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_02_2/MenuUtils.java)
+#### [MenuUtils.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_03_1/MenuUtils.java)
 
   Реализует утильные классы меню.
 
-#### [StackException.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_02_2/MenuUtils.java)
+#### [StackException.java](https://github.com/Flarefibber/homework_2_2/blob/master/java.main/src/HW_03_1/StackException.java)
 
   Реализует класс исключения с конструктором.
