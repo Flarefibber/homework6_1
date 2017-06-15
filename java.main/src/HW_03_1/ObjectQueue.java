@@ -1,5 +1,6 @@
 package HW_03_1;
 
+import org.jetbrains.annotations.NotNull;
 public class ObjectQueue
 {
     private ObjectBox head = null;
@@ -66,7 +67,12 @@ public class ObjectQueue
     public int size() {
         return size;
     }
-
+    @NotNull
+    public Integer testNotNull() throws IllegalStateException {
+        Integer integer = new Integer(25);
+        integer = null;
+        return integer;
+    }
     private class ObjectBox
     {
         private Object object;

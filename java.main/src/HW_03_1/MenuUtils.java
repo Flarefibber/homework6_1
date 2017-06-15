@@ -14,13 +14,24 @@ public class MenuUtils {
             case 2: pushQueue(); break;
             case 3: pullbackQueue(); break;
             case 4: sizeQueue(); break;
+            case 5: printTestNotNull(); break;
             default: runExitMenu();
         }
     }
+
+    private static void printTestNotNull() {
+        try {
+        System.out.print("\nInteger = "+queue.testNotNull()+"\n");
+        } catch (IllegalStateException e) {
+            System.out.print("\nInteger =  null\n");
+        }
+    }
+
+
     public static void doChoice() {
         do {
             choice = readInt("Your choice is: \n");
-        } while (choice < 1 || choice > 5);
+        } while (choice < 1 || choice > 6);
     }
 
     private static int readInt(String request) {
@@ -50,7 +61,6 @@ public class MenuUtils {
         }
         else queue = new ObjectQueue();
     }
-
     private static void pushQueue(){
         Scanner in = new Scanner(System.in);
         System.out.print("\nEnter a value for the stack: \n");

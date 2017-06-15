@@ -19,7 +19,8 @@ public class Menu {
         System.out.println("     2: Add value");
         System.out.println("     3: Get the value of the stack");
         System.out.println("     4: Get the current stack size");
-        System.out.println("     5: Exit");
+        System.out.println("     5: Test @NotNull");
+        System.out.println("     6: Exit");
         System.out.println("=====================================================");
     }
     public static void setIsExit(boolean isExit) {
