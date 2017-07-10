@@ -1,6 +1,4 @@
 package HW_05_1;
-import java.util.Map;
-import java.util.stream.Stream;
 
 public class GettingFood implements Runnable{
     private ObjectQueue q;

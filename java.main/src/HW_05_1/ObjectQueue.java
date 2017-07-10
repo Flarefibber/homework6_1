@@ -5,8 +5,17 @@ public class ObjectQueue
     private ObjectBox head = null;
     private ObjectBox tail = null;
     private int size = 0;
+    private boolean valueSet = false;
 
-    public void push(Object obj) {
+    public synchronized void push(Object obj) {
+        while (valueSet)
+        {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                System.out.println("InterruptedException");
+            }
+        }
         ObjectBox ob = new ObjectBox();
         ob.setObject(obj);
         if (head == null) {
@@ -16,10 +25,22 @@ public class ObjectQueue
         }
         tail = ob;
         size++;
+        valueSet=true;
+        notify();
     }
 
-    public Object pull() {
+    public synchronized Object pull() {
+        while (!valueSet)
+        {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                System.out.println("InterruptedException");
+            }
+        }
         if (size == 0) {
+            valueSet=false;
+            notify();
             return null;
         }
         Object obj = head.getObject();
@@ -28,20 +49,8 @@ public class ObjectQueue
             tail = null;
         }
         size--;
-        return obj;
-    }
-
-    public Object get(int index) {
-        if(size == 0 || index >= size || index < 0) {
-            return null;
-        }
-        ObjectBox current = head;
-        int pos = 0;
-        while(pos < index) {
-            current = current.getNext();
-            pos++;
-        }
-        Object obj = current.getObject();
+        valueSet=false;
+        notify();
         return obj;
     }
 
