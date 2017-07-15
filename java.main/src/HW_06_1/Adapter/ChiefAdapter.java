@@ -4,16 +4,16 @@ public class ChiefAdapter implements Chief{
     private Plumber plumber = new Plumber();
     @Override
     public Object makeBreakfast() {
-        return plumber.getKey();
+        return plumber.getBreakfast();
     }
 
     @Override
     public Object makeDinner() {
-        return plumber.getScrewDriver();
+        return plumber.getDinner();
     }
 
     @Override
     public Object makeSupper() {
-        return plumber.getPipe();
+        return plumber.getSupper();
     }
 }

@@ -1,6 +1,6 @@
 package HW_06_1.Factory_Method;
 
-public class CatAnimalFactory implements AnimalFactory{
+public class CatIAnimalFactory implements IAnimalFactory {
     @Override
     public Animal createAnimal() {
         return new Cat();

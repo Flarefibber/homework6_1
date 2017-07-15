@@ -1,15 +1,15 @@
 package HW_06_1.Adapter;
 
 public class Plumber {
-    public Object getPipe(){
+    public Object getBreakfast(){
         return new Object();
     }
 
-    public Object getKey(){
+    public Object getDinner(){
         return new Object();
     }
 
-    public Object getScrewDriver(){
+    public Object getSupper(){
         return new Object();
     }
 }
